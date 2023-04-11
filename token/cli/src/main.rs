@@ -887,11 +887,11 @@ async fn command_authorize(
                     auth_str
                 )),
                 AuthorityType::AccountOwner => {
-                    check_associated_token_account()?;
+                    // check_associated_token_account()?;
                     Ok(COption::Some(token_account.base.owner))
                 }
                 AuthorityType::CloseAccount => {
-                    check_associated_token_account()?;
+                    // check_associated_token_account()?;
                     Ok(COption::Some(
                         token_account
                             .base
